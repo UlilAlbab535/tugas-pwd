@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Ulil Albab</title>
+    <link rel="stylesheet" href="assets/css/porto.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Muhammad Ulil Albab</h1>
+        <p class="tagline">Web Developer / IT Student</p>
+    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+    <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <p>Mahasiswa Jurusan Teknik Informatika di Universitas Hasyim Asy'ari</p>
+    </section>
+    <section id="skills" class="section">
+        <h2>Keahlian</h2>
+        <ul>
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">CSS</li>
+            <li class="skill-item">JavaScript</li>
+        </ul>
+
+    </section>
+    <section id="portfolio" class="section">
+        <h2>Portofolio</h2>
+        <div class="project-card">
+            <h3>Proyek 1</h3>
+            <p>Pembuatan Portofolio</p>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" rows="5" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2026 Muhammad Ulil Albab. Hak Cipta Dilindungi.</p>
+    </footer>
+    <script>
+        const toggle = document.getElementById("darkModeToggle");
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            toggle.textContent =
+                document.body.classList.contains("dark") ? "☀️" : "🌙";
+        });
+    </script>
+</body>
+
+</html>

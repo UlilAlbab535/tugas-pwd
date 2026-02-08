@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(6, 55, 71);
+}
+
+h1 {
+    color: rgb(85, 85, 186);
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+#anjay {
+    color: aliceblue;
+    font-size: large;
+    animation: name duration timing-function 200 iteration-count linear fill-mode;
+}
+
+.ajojing {font: optional; color: red; outline-color: aquamarine;}
