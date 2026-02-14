@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <p id="demo">Ini adalah paragraf yang akan diubah oleh JavaScript.</p>
+    <button onclick="ubahTeks()">Klik Saya</button>
+
+    <script>
+        function ubahTeks() {
+            document.getElementById("demo").innerHTML = "Teks telah diubah!";
+        }
+    </script>
+</body>
+</html>
